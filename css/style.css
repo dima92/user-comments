@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/InterRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/InterMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/InterSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("fonts/InterBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #121212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 760px;
+  min-height: 246px;
+  background-color: #fffdf9;
+  border-radius: 38px;
+  padding: 24px;
+}
+
+.comment__avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 24px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.comment__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.comment__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.comment__user-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.comment__name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #2d2218;
+}
+
+.comment__badge {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #5e5e5e;
+  background-color: #eeeae4;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.comment__date {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #5e5e5e;
+}
+
+.comment__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #5e5e5e;
+  margin-bottom: 20px;
+}
+
+.comment__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #433226;
+  margin: 0 0 20px 0;
+  max-width: 610px;
+}
+
+.comment__actions {
+  display: flex;
+  gap: 10px;
+}
+
+.comment__btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 14px;
+  background-color: #fff3e3;
+  color: #c2410c;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.comment__btn:hover {
+  background-color: #ffe4cc;
+}
+
+.comment__btn:active {
+  transform: scale(0.97);
+}
+
+.comment__icon {
+  width: 20px;
+  height: 20px;
+}

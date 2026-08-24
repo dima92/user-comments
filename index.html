@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Комментарий пользователя</title>
+</head>
+
+<body>
+    <article class="comment">
+        <img src="img/avatar.jpg" alt="Марина Орлова" class="comment__avatar">
+
+        <div class="comment__content">
+            <header class="comment__header">
+                <div class="comment__user-info">
+                    <h2 class="comment__name">Марина Орлова</h2>
+                    <span class="comment__badge">Ментор</span>
+                </div>
+                <time datetime="2026-08-24T22:15" class="comment__date">14 минут назад</time>
+            </header>
+
+            <p class="comment__subtitle">Product Designer</p>
+
+            <p class="comment__text">
+                Мне нравится, когда интерфейс не пытается выглядеть "сложно". Хорошая композиция, понятные отступы и
+                аккуратное выравнивание почти всегда работают лучше, чем перегруженные декоративные решения.
+            </p>
+
+            <div class="comment__actions">
+                <button class="comment__btn comment__btn--likes">
+                    <svg class="comment__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
+                    </svg>
+                    <span>32</span>
+                </button>
+
+                <button class="comment__btn comment__btn--reply">
+                    <svg class="comment__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 17 4 12 9 7"></polyline>
+                        <path d="M20 18v-2a4 4 0 0 0-4-4H4"></path>
+                    </svg>
+                    <span>Ответить</span>
+                </button>
+            </div>
+        </div>
+    </article>
+
+</body>
+
+</html>
